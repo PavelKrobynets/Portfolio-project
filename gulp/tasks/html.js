@@ -13,6 +13,9 @@ export const html = () => {
 	))
 	.pipe(fileinclude())
 	.pipe(app.plugins.replace(/@img\//g, 'img/'))
+	.pipe(app.plugins.replace(/@js\//g, 'js/'))
+	.pipe(app.plugins.replace(/@css\//g, 'css/'))
+	.pipe(app.plugins.replace(/@icons\//g, 'icons/'))
 	.pipe(app.plugins.ifPlugin(
 		app.isBuild,
 			webpHtmlNosvg()

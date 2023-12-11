@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "browser-sync": "^2.29.3",
+    "cwebp": "^3.0.0",
     "del": "^7.1.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^9.0.0",
