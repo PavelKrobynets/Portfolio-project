@@ -11,17 +11,23 @@
 	&__btns {
 		margin-top: 25px;
 		display: flex;
-		width: 250px;
+		width: 280px;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: space-around;
 	}
 	&__link {
 		color: $text-black;
+		padding: 10px 25px;
 		text-decoration: none;
 		font-weight: bold;
 		letter-spacing: 0.7px;
+		transition-duration: 800ms;
 		&:hover{
-			color: $text-black;
+			color: white;
+			padding: 10px 25px;
+			border-radius: 3px;
+			background-color: $main-color;
+			box-shadow: 0 0 30px 3px $main-color;
 		}
 	}
 }

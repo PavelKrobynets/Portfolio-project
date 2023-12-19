@@ -8,11 +8,13 @@
 	}
 
 	&_fs16 {
+		padding-left: 10px;
 		font-size: 16px;
 		line-height: 24px;
 		letter-spacing: 0.5px;
 		position: relative;
 		@include before_circle;
+		z-index: 2;
 	}
 	&_fs14 {
 		font-style: 14px;
