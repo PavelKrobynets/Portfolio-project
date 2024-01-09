@@ -1,0 +1,40 @@
+.resume{
+
+	background-color: $background-color;
+	color: $text-color;
+	padding-top: 120px;
+
+	&__title {
+		margin-left: 50%;
+		transform: translateX(-10%);
+	}
+	&__subtitle {
+		text-align: center;
+		line-height: 60px;
+	}
+	&__wrapper {
+		display: grid;
+		padding: 60px 120px 0 120px;
+		grid-template-columns: repeat(2, 425px);
+		column-gap: 150px;
+	}
+	&__column {
+	}
+	&__column-title {
+	}
+	&__item {
+		svg{
+			path{
+				fill:$text-color;
+			}
+		}
+	}
+	&__item-head {
+	}
+	&__item-icon {
+	}
+	&__item-location {
+	}
+	&__body {
+	}
+}
