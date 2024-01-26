@@ -3,6 +3,7 @@
 	background-color: $background-color;
 	color: $text-color;
 	padding-top: 120px;
+	padding-bottom: 100px;
 
 	&__title {
 		margin-left: 50%;
@@ -19,22 +20,75 @@
 		column-gap: 150px;
 	}
 	&__column {
-	}
-	&__column-title {
+		&-title{
+			position: relative;
+			padding-left: 35px;
+			&:before{
+				content: '';
+				position: absolute;
+				width: 15px;
+				height: 15px;
+				background: $main-color;
+				border-radius: 50%;
+				left: -7px;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+		ul{
+			list-style-type: none;
+			li{
+				position: relative;
+				&:after{
+					content: '';
+					width: 1px;
+					height: 110%;
+					position: absolute;
+					top: -16px;
+					left: -32px;
+					background-color: $text-color;
+				}
+			}
+		}
 	}
 	&__item {
+		position: relative;
+		&::before{
+			content: '';
+			height: 1px;
+			width: 35px;
+			position: absolute;
+			background-color: $text-color;
+			top: 43px;
+			left: -31px;
+		}
 		svg{
 			path{
 				fill:$text-color;
 			}
 		}
-	}
-	&__item-head {
-	}
-	&__item-icon {
-	}
-	&__item-location {
-	}
-	&__body {
+		&-head {
+			padding: 19px 0 0 65px;
+			position: relative;
+		}
+		&-body{
+			margin-top: 18px;
+			padding-left: 11px;
+			font-size: 14px;
+		}
+		&-icon{
+			position: absolute;
+			@include before_circle;
+			z-index: 0;
+			top: 40px;
+			left: 24px;
+			&:before{
+				top:-15px;
+				left: -20px;
+			}
+		}
+		&-location{
+			font-size: 14px;
+		}
 	}
 }
