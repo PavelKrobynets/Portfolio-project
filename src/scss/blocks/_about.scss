@@ -19,8 +19,14 @@
 	}
 	&__descr {
 		padding-top: 6px;
-		.divider{
+		& > .headline__divider{
 			margin: 0;
+		}
+		& > .headline__title{
+			margin-left: 55px;
+		}
+		& > .headline__subtitle{
+			text-align: left;
 		}
 	}
 	

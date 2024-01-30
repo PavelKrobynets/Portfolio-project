@@ -1,0 +1,20 @@
+.skills{
+	background-color: $background-color;
+	color: $text-color;
+}
+.skills {
+	& > .container{
+		& > .title_fs16{
+		margin-left: 52%;
+	}
+	}
+	&__technologies {
+	}
+	&__technologies-item {
+	}
+	&__technologies-icon {
+	}
+	&__technologies-text {
+	}
+}
+

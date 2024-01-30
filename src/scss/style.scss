@@ -10,6 +10,9 @@
 @import 'blocks/menu';
 @import 'blocks/about';
 @import 'blocks/resume';
+@import 'blocks/_skills';
+@import 'blocks/_headline';
+
 *{
 	font-family: "Poppins", sans-serif;
 	margin: 0;
@@ -19,10 +22,4 @@
 .container{
 	width: 1140px;
 	margin: 0 auto ;
-}
-.divider {
-	width: 60px;
-	height: 3px;
-	background-color: $main-color;
-	margin: 10px auto 0 auto;
 }
