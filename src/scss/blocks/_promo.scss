@@ -4,6 +4,12 @@
 	background: url('../img/Background.jpg') no-repeat 50%/cover; 
 	padding-top: 205px;
 	color: $text-black;
+
+	&>.container{
+		&>.title_fs16{
+			padding: 3px 0 0 23px;
+		}
+	}
 	&__title {
 		width: 535px;
 		margin-top: 10px;

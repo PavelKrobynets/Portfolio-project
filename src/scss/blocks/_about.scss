@@ -3,7 +3,6 @@
 	background-color: $background-color;
 	color: $text-color;
 	padding-top: 120px;
-	padding-bottom: 50px;
 	&__wrapper {
 		display: grid;
 		grid-template-columns: 400px 670px;
@@ -21,6 +20,7 @@
 		padding-top: 6px;
 		& > .headline__divider{
 			margin: 0;
+			margin-top: 10px;
 		}
 		& > .headline__title{
 			margin-left: 55px;
