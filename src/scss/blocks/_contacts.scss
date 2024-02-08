@@ -15,6 +15,29 @@
 		}
 	}
 	&__info{
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		&>.title_fs14{
+			letter-spacing: 1px;
+		}
+	}
+	&__icons{
+		width: 28%;
+		display: flex;
+		justify-content: space-between;
+		svg {
+			path{
+				fill: white;
+			}
+			&:hover{
+					path{
+						fill: $main-color;
+					}
+			}
+		}
+	}
+	&__headline{
 		padding-top: 6px;
 		& > .headline__divider{
 			margin: 0;
@@ -27,4 +50,16 @@
 			text-align: left;
 		}
 	}
+	&__icons {
+	}
+	&__form {
+		&-name {
+		}
+		&-email{
+		}
+		&-message{
+
+		}
+	}
 }
+

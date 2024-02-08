@@ -372,9 +372,11 @@
 					<img src="img/main-image.webp" alt="photo">
 				</div>
 				<div class="contacts__info">
-					<h2 class="title title_fs16 headline__title">Contacts</h2>
-					<div class="title title_fs36 headline__subtitle">Get in touch with me</div>
-					<div class="headline__divider"></div>
+						<div class="contacts__headline">
+							<h2 class="title title_fs16 headline__title">Contacts</h2>
+							<div class="title title_fs36 headline__subtitle">Get in touch with me</div>
+							<div class="headline__divider"></div>
+						</div>
 					<div class="contacts__icons">
 						<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M25.6055 0L4.39453 0C1.97159 0 0 1.97159 0 4.39453L0 25.6055C0 28.0284 1.97159 30 4.39453 30L13.2422 30L13.2422 19.3945L9.72656 19.3945L9.72656 14.1211H13.2422V10.5469C13.2422 7.63893 15.6077 5.27344 18.5156 5.27344L23.8477 5.27344V10.5469H18.5156L18.5156 14.1211H23.8477L22.9687 19.3945H18.5156V30H25.6055C28.0284 30 30 28.0284 30 25.6055L30 4.39453C30 1.97159 28.0284 0 25.6055 0Z" fill="black"/>
@@ -388,7 +390,21 @@
 									<path d="M7.93685 6.93715C7.93685 6.38521 7.48942 5.93777 6.93748 5.93777C6.38554 5.93777 5.93811 6.38521 5.93811 6.93715C5.93811 7.48909 6.38554 7.93652 6.93748 7.93652C7.48942 7.93652 7.93685 7.48909 7.93685 6.93715Z" fill="black"/>
 									</svg>
 					</div>
-					
+					<div class="title title_fs14">Or leave your details and I'll email you:</div>
+					<form action="" class="contacts__form">
+						<fieldset class="contacts__form-name">
+							<legend>Your name</legend>
+							<input type="text" placeholder="Name" required>
+						</fieldset>
+						<fieldset class="contacts__form-email">
+							<legend>Your email</legend>
+							<input type="text" placeholder="Email" required>
+						</fieldset>
+						<fieldset class="contacts__form-message">
+							<legend>Your message</legend>
+							<input type="text" placeholder="Message" required>
+						</fieldset>
+					</form>
 				</div>
 			</div>
 		</div>
