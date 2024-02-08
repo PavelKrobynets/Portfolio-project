@@ -76,6 +76,7 @@
 			font-size: 12px;
 			background-color: $background-color;
 			color: $text-color;
+			border: 1px solid $text-color;
 			&:focus{
 				outline: none;
 			}
@@ -94,7 +95,7 @@
 			font-size: 12px;
 			background-color: $background-color;
 			color: $text-color;
-			border-color: $text-color;
+			border: 1px solid $text-color;
 			&:focus{
 				outline: none;
 			}
