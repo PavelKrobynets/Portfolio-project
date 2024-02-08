@@ -22,7 +22,8 @@ import { images } from "./gulp/tasks/images.js";
 import { svgSprive } from "./gulp/tasks/svgSprive.js";
 import { zip } from "./gulp/tasks/zip.js";
 import { libsCopy } from "./gulp/tasks/copy.js";
-import { icons } from "./gulp/tasks/copy.js"
+import { icons } from "./gulp/tasks/copy.js";
+import { files } from "./gulp/tasks/copy.js";
 
 
 function watcher() {
@@ -35,7 +36,7 @@ function watcher() {
 export { svgSprive }
 
 
-const mainTasks = gulp.parallel(html, libsCopy, scss, js, images, icons);
+const mainTasks = gulp.parallel(html, libsCopy, scss, js, images, icons, files);
 
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
 const build = gulp.series(reset, mainTasks);
