@@ -396,18 +396,24 @@
 					<div class="title title_fs14">Or leave your details and I'll email you:</div>
 					<form action="" class="contacts__form">
 						<div class="contacts__input">
-								<input id="name" name="name" type="text">
+								<input id="name" name="name" type="text" required>
 								<label for="name">Your name</label>
 						</div>
 						<div class="contacts__input">
-								<input id="email" name="email" type="email">
+								<input id="email" name="email" type="email" required>
 								<label for="email">Your email</label>
 						</div>
 						<div class="contacts__textarea">
 							<textarea name="text" id="text"></textarea>
 							<label for="text">Your message</label>
 						</div>
-						<button class="btn contacts__btn">Send message</button>
+						<div class="contacts__triggers">
+							<button class="btn contacts__btn">Send message</button>
+							<div class="contacts__policy">
+								<input type="checkbox" id="policy" name="policy" required>
+								<label for="policy">I agree with the <a href="https://www.privacypolicies.com/live/1f150443-4ba3-49de-ab77-2f36940b76b4">privacy policy</a></label>
+							</div>
+						</div>
 					</form>
 				</div>
 			</div>
