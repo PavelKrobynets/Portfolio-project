@@ -5,11 +5,7 @@
 	padding-top: 205px;
 	color: $text-black;
 
-	&>.container{
-		&>.title_fs16{
-			padding: 3px 0 0 23px;
-		}
-	}
+	
 	&__title {
 		width: 535px;
 		margin-top: 10px;
@@ -38,10 +34,3 @@
 	}
 }
 
-@media (max-width: 1440px){
-	.promo {
-		& > .container{
-			padding-left: 6%;
-		}
-	}
-}
