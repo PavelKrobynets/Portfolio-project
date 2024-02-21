@@ -1,27 +1,58 @@
 @media(max-width: 1440px){
 	.container{
 		max-width: 1180px;
-		padding-left: 5%;
 	}
 }
 @media(max-width: 1200px){
 	.container{
 		max-width: 960px;
 	}
+	.about{
+		&__photo{
+			height: 500px;
+		}
+		&__wrapper{
+			grid-template-columns: 400px 540px;
+			column-gap: 0px;
+		}
+		&__skills{
+		column-gap: 25px;
+		row-gap: 20px;
+		}
+	}
 	
 }
 @media(max-width: 992px){
 	.container{
 		max-width: 720px;
-
-		padding-left: 4%;
+	}
+	.about{
+		&__text, &__skills-text{
+			font-size: 13px;
+		}
+		&__photo{
+			height: 400px;
+			grid-row: 1/2;
+		}
+		&__descr {
+			& > .headline__title{
+				margin-left: 35px;
+			}
+		}	
+		&__wrapper{
+			grid-template-columns: 300px 400px;
+			column-gap: 20px;
+		}
+		&__skills{
+		column-gap: 25px;
+		row-gap: 20px;
+		grid-column: 1/4;
+		}
 	}
 }
 @media(max-width: 768px){
 	.container{
 		max-width: 540px;
-		padding-left: 0;
-		margin-left: 4%;
 	}
 	.title{
 		&_fs48{
@@ -31,6 +62,52 @@
 	}
 	.sidepanel{
 		display: none;
+	}
+	.promo{
+		.container{
+			padding: 0;
+			margin-left: 8%;
+		}
+	}
+	.about{
+		padding-top: 80px;
+		.container{
+			width: 100%;
+		}
+		&__text, &__skills-text{
+			font-size: 12px;
+		}
+		&__photo{
+			height: 330px;
+			grid-row: 1/2;
+		}
+		&__descr {
+			padding-top: 6px; 
+			& > .headline__divider{
+				margin: 0;
+			}
+			& > .headline__title{
+				margin-left: 25px;
+			}
+			& > .headline__subtitle{
+				text-align: left;
+				font-size: 30px;
+			}
+		}
+		&__wrapper{
+			grid-template-columns: 265px 280px;
+			column-gap: 0;
+		}
+		&__skills{
+		column-gap: 0;
+		row-gap: 10px;
+		grid-column: 1/4;
+		&-item{
+			display: grid;
+			grid-template-columns: 40px 180px;
+			column-gap: 20px;
+		}
+		}
 	}
 }
 @media(max-width: 576px){
@@ -47,7 +124,20 @@
 			padding-left: 15;
 		}
 	}
+	.menu{
+		&__block{
+			width: 250px;
+		}
+		&__link{
+			font-size: 18px;
+		}
+	}
 	.promo{
+		.container{
+			padding: 0;
+			margin-left: 4%;
+			max-width: 100%;
+		}
 		&__title{
 			width: 300px;
 		}
@@ -61,5 +151,30 @@
 	.btn{
 		height: 40px;
 		padding: 10px 15px;
+	}
+	.about{
+		padding-top: 30px;
+		&__photo{
+			height: 400px;
+		}
+		&__descr {
+			padding-top: 6px; 
+			& > .headline__title{
+				margin-left: 25px;
+			}
+			& > .headline__subtitle{
+				text-align: left;
+				font-size: 30px;
+			}
+		}
+		&__wrapper{
+			display: flex;
+			flex-direction: column;
+		}
+		&__skills{
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+		}
 	}
 }
