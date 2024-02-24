@@ -44,6 +44,27 @@
 			row-gap: 25px;
 		}
 	}
+	.portfolio{
+		&__wrapper{
+			grid-template: repeat(2, 49%) / repeat(4, 25%); 
+			margin-left: -1%;
+		}
+	}
+	.contacts{
+		&__wrapper{
+		grid-template-columns: 300px 450px;
+		justify-content: space-around;
+		gap: 25px;
+		}
+		&__img{
+			&>img{
+				width: 400px;
+			}
+		}
+		&__form{
+		grid-template: 45px 170px 45px / repeat(2, 220px);
+		}
+	}
 }
 @media(max-width: 992px){
 	.container{
@@ -79,6 +100,34 @@
 			padding: 30px 50px 0 50px;
 		}
 	}
+	.portfolio{
+		.headline__title{
+			margin-left: 48%;
+		}
+		&__wrapper{
+			margin-top: 40px;
+		}
+	}
+	.contacts{
+		.headline__title{
+			margin-left: 9%;
+		}
+		&__wrapper{
+		grid-template-columns: 1fr;
+		justify-content: space-around;
+		gap: 0px;
+		}
+		&__img{
+			&>img{
+				visibility: hidden;
+				margin-bottom: -533px;
+			}
+		}
+		&__form{
+		grid-template: 45px 170px 45px / repeat(2, 43vw);
+		}
+	}
+
 }
 @media(max-width: 768px){
 	.container{
@@ -169,6 +218,15 @@
 			grid-template-rows: repeat(3, 60px);
 			column-gap: 35px;
 			row-gap: 25px;
+		}
+	}
+	.portfolio{
+		&>.container{
+			margin: 0 auto;
+		}
+		&__wrapper{
+			grid-template: repeat(2, 49%) / repeat(4, 24%);
+			margin-left: 0;
 		}
 	}
 }
@@ -283,6 +341,58 @@
 			grid-template-columns: repeat(1, 95%);
 			grid-template-rows: repeat(6, 50px);
 			row-gap: 40px;
+		}
+	}
+	.portfolio{
+		padding-top: 20px;
+		.headline__title{
+			margin-left: 45%;
+		}
+		&>.container{
+			margin: 0 auto;
+		}
+		&__wrapper{
+			grid-template-columns: repeat(2, 49%);
+			grid-template-rows: repeat(3, 180px);
+			&>.vertical, .horizontal{
+				grid-row: unset;
+				grid-column: unset;
+			}
+		}
+		&__item{
+			&>img{
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+	.contacts{
+		.headline__title{
+			margin-left: 9%;
+		}
+		.headline__subtitle{
+			line-height: 35px;
+		}
+		&__icons{
+			width: 40%;
+		}
+		&__wrapper{
+		grid-template-columns: 90vw;
+		justify-content: center;
+		gap: 0px;
+		}
+		&__img{
+			&>img{
+				visibility: hidden;
+				margin-bottom: -533px;
+			}
+		}
+		&__form{
+		grid-template: 45px 170px 45px / repeat(2, 40vw);
+		}
+		&__btn{
+			font-size: 14px;
+			padding: 15px 0 30px 0;
 		}
 	}
 }
